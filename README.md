@@ -16,17 +16,17 @@ $ docker-compose up -d
 - パッケージインストール
 
 ```
-$ docker-compose exec express npm install 
+$ docker-compose exec cypress npm run install 
 ```
 
 - インストール確認
 
 ```
-$ docker-compose exec express $(npm bin)/cypress verify
+$ docker-compose exec cypress npm run cypress:verify
 ```
 
 ## テスト実行
 
 ```
-$ docker-compose exec express $(npm bin)/cypress run
+$ docker-compose exec cypress npm run cypress:run
 ```

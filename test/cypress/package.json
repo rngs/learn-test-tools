@@ -9,7 +9,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "npm install"
+    "install": "npm install",
+    "cypress:verify": "cypress verify",
+    "cypress:run": "cypress run"
   },
   "author": "",
   "license": "ISC"
