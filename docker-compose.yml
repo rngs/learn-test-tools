@@ -1,0 +1,10 @@
+version: '3'
+services:
+  cypress:
+    container_name: local_cypress
+    build: ./docker/dockerFiles/cypress
+    working_dir: /docker/test/cypress
+    tty: true
+    volumes:
+      - ./:/docker
+      - ./containers/cypress/:/containers
