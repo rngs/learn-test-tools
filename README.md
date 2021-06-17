@@ -30,3 +30,19 @@ $ docker-compose exec cypress npm run cypress:verify
 ```
 $ docker-compose exec cypress npm run cypress:run
 ```
+
+# TestCafe
+
+## 初回起動
+
+- コンテナ起動
+
+```
+$ docker-compose up -d
+```
+
+- パッケージインストール
+
+```
+$ docker-compose exec testcafe npm run install 
+```

@@ -1,0 +1,14 @@
+{
+  "name": "testcafe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm install",
+    "testcafe": "./node_modules/.bin/testcafe "
+  },
+  "devDependencies": {
+    "testcafe": "^1.14.2"
+  }
+}

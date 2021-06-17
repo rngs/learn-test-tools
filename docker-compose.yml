@@ -8,3 +8,12 @@ services:
     volumes:
       - ./:/docker
       - ./containers/cypress/:/containers
+
+  testcafe:
+    container_name: local_testcafe
+    build: ./docker/dockerFiles/testcafe
+    working_dir: /docker/test/testcafe
+    tty: true
+    volumes:
+      - ./:/docker
+      - ./containers/testcafe/:/containers
